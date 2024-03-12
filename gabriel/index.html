@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS 3/12 | Inheritance and the Prototype Chain</title>
+</head>
+<script src="script.js"></script>
+<style>
+    div {
+        display: none;
+        margin-bottom: 10px;
+        margin-top: 10px;
+    }
+    button {
+        width: 100px;
+        height: 50px;
+    }
+    img {
+        width: 200px;
+    }
+</style>
+<body>
+    <img src="" id="image">
+    <h1 id="answer"></h1>
+    
+
+    <button onclick="showCat()"> CAT </button>
+    <button onclick="showDog()"> DOG </button>
+
+    <div id="cat">
+        <button onclick="myCat.greet()"> Greet cat. </button>
+        <button onclick="myCat.meow()"> Meow. </button>
+        <button onclick="myCat.sit()"> Sit. </button>   
+        <button onclick="myCat.sleep()"> Rest. </button>
+    </div>
+    
+    <div id="dog">
+        <button onclick="myDog.greet()"> Greet dog. </button>
+        <button onclick="myDog.bark()"> Bark. </button>
+        <button onclick="myDog.sit()"> Sit. </button>
+        <button onclick="myDog.sleep()"> Rest. </button>
+    </div>
+</body>
+</html>
